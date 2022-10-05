@@ -113,7 +113,7 @@ const Calculator = () => {
 
 
             <div className='display' >
-                {total} {total && symboles} {secondTotal} {percentSymbol}   {<p>  {parcentage ? parcentage : calc} </p>}
+                {total} {total && symboles} {secondTotal}{percentSymbol}   {<p>  {parcentage ? parcentage : calc} </p>}
             </div>
 
             <div className='button-side' >
@@ -136,7 +136,7 @@ const Calculator = () => {
                 <button onClick={() => setNumber(point)}>.</button>
                 <button onClick={() => setNumber(zero)}>0</button>
                 <button className='orange' disabled={calc} onClick={totalCalculation}>=</button>
-                <button onClick={() => setparcentage(percent)} className='symbol'>%</button>
+                <button disabled={!calc} onClick={() => setparcentage(percent)} className='symbol'>%</button>
             </div>
         </div>
     );
