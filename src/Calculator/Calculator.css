@@ -3,16 +3,16 @@
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
-    width: 355px;
+    width: 420px;
     margin: auto;
     margin-top: 70px;
     background-color: black;
 }
 
-.main {
+.display {
     border: 1px solid gray;
     border-radius: 10px;
-    width: 310px;
+    width: 375px;
     height: 100px;
     margin: auto;
     margin-bottom: 30px;
@@ -26,7 +26,7 @@
 }
 
 
-.main p {
+.display p {
     font-size: 30px;
     font-weight: bold;
 
@@ -34,7 +34,8 @@
 
 .button-side {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(60px, auto);
     grid-gap: 10px;
     width: 350px;
     margin-bottom: 10px;
@@ -71,6 +72,13 @@ button {
 
 .red {
     background-color: #a52a2a;
+
+}
+
+#clear {
+    grid-column: 1/3;
+    grid-row: 1;
+    width: 98%
 }
 
 .red:hover {
